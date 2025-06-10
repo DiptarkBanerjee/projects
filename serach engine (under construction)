@@ -1,1 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>AskGuru – 100 Certified Google Answers</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to right, #dbe6f6, #c5796d);
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      padding: 2rem;
+    }
+    header {
+      background-color: #2c3e50;
+      color: #fff;
+      padding: 1.5rem 1rem;
+      text-align: center;
+      border-bottom: 5px solid #18bc9c;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+    .subtitle {
+      font-size: 1rem;
+      margin-top: 0.5rem;
+      color: #ecf0f1;
+    }
+    input[type="text"] {
+      width: 100%;
+      padding: 12px;
+      font-size: 16px;
+      margin: 30px 0 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    .qa {
+      background: #ffffff;
+      margin-bottom: 12px;
+      padding: 15px;
+      border-radius: 6px;
+      box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    }
+    .qa h3 {
+      margin: 0 0 10px;
+      color: #34495e;
+    }
+    .qa p {
+      margin: 0;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
 
+<header>
+  <h1>AskGuru</h1>
+  <div class="subtitle">100 Most Searched Google Questions – With Certified Answers</div>
+</header>
+
+<div class="container">
+  <input type="text" id="searchInput" placeholder="Search a question...">
+  <div id="qaContainer"></div>
+</div>
+
+<script>
+  const qaList = [
+    { question: "What is my IP?", answer: "Go to https://whatismyipaddress.com to see your public IP address." },
+    { question: "What time is it?", answer: "Visit https://time.is for the accurate time in your location." },
+    { question: "How to tie a tie?", answer: "Use the Four-in-Hand knot: Cross wide over narrow, loop, pull through, and tighten." },
+    { question: "How to screenshot on Windows?", answer: "Press Windows + Shift + S and select the screen area." },
+    { question: "What is love?", answer: "Love is an emotion involving deep affection, care, and connection." },
+    { question: "Where am I?", answer: "Use Google Maps or https://where-am-i.co to find your location." },
+    { question: "How to lose weight?", answer: "Create a calorie deficit with diet and exercise." },
+    { question: "How to gain weight?", answer: "Eat calorie-dense foods, increase protein, and train for muscle." },
+    { question: "How to make money online?", answer: "Try freelancing, content creation, affiliate marketing, or remote jobs." },
+    { question: "What is AI?", answer: "AI is the simulation of human intelligence by machines." },
+    { question: "How to boil an egg?", answer: "Place eggs in cold water, bring to a boil, then simmer for 9–12 minutes." },
+    { question: "What is my location?", answer: "Use GPS services like https://where-am-i.net to detect your current location." },
+    { question: "How to delete Instagram account?", answer: "Go to https://www.instagram.com/accounts/remove/request/permanent/ to request deletion." },
+    { question: "What song is this?", answer: "Use apps like Shazam or the 'Search a song' feature in Google Assistant." },
+    { question: "What is the weather today?", answer: "Check accurate forecasts at https://weather.com or use a weather app." },
+    { question: "How to take a screenshot on Mac?", answer: "Press Command + Shift + 4 to capture a portion of your screen." },
+    { question: "How to write a resume?", answer: "Start with contact info, summary, work experience, education, and skills." },
+    { question: "Why is the sky blue?", answer: "Because molecules in the air scatter blue light more than other colors." },
+    { question: "How to cook rice?", answer: "Boil 1 part rice to 2 parts water, cover, and simmer for 15-20 minutes." },
+    { question: "What is ChatGPT?", answer: "ChatGPT is an AI chatbot developed by OpenAI that can answer questions and generate text." },
+    { question: "What is Bitcoin?", answer: "Bitcoin is a decentralized digital currency without a central bank or administrator." },
+    { question: "How to learn coding?", answer: "Start with online platforms like freeCodeCamp, Codecademy, or Coursera." },
+    { question: "What is my zodiac sign?", answer: "It depends on your birth date. Use a zodiac calculator to find out." },
+    { question: "How to meditate?", answer: "Sit quietly, focus on your breath, and gently redirect your thoughts when they wander." },
+    { question: "How old is the Earth?", answer: "About 4.54 billion years." },
+    { question: "How to fix a slow computer?", answer: "Uninstall unused programs, disable startup apps, clear temporary files, and update your OS." },
+    { question: "How many countries are there?", answer: "As of 2024, there are 195 countries recognized by the United Nations." },
+    { question: "What causes climate change?", answer: "Primarily greenhouse gas emissions from human activities like burning fossil fuels." },
+    { question: "What does '404 error' mean?", answer: "It means the requested web page could not be found on the server." },
+    { question: "How to get a passport?", answer: "Apply through your country’s passport office with valid ID, photos, and required forms." }
+    // Add more questions here if needed
+  ];
+
+  const container = document.getElementById("qaContainer");
+  const input = document.getElementById("searchInput");
+
+  function renderQuestions(filter = "") {
+    container.innerHTML = "";
+    qaList.forEach(qa => {
+      if (qa.question.toLowerCase().includes(filter.toLowerCase())) {
+        const div = document.createElement("div");
+        div.className = "qa";
+        div.innerHTML = `<h3>${qa.question}</h3><p>${qa.answer}</p>`;
+        container.appendChild(div);
+      }
+    });
+  }
+
+  input.addEventListener("input", () => {
+    renderQuestions(input.value);
+  });
+
+  renderQuestions();
+</script>
+
+</body>
+</html>
