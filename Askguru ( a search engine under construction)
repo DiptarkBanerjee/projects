@@ -60,7 +60,7 @@
 
 <header>
   <h1>AskGuru</h1>
-  <div class="subtitle">100 Most Searched Google Questions – With Certified Answers</div>
+  <div class="subtitle"> Most Searched Google Questions – With Certified Answers</div>
 </header>
 
 <div class="container">
@@ -100,7 +100,57 @@
     { question: "What causes climate change?", answer: "Primarily greenhouse gas emissions from human activities like burning fossil fuels." },
     { question: "What does '404 error' mean?", answer: "It means the requested web page could not be found on the server." },
     { question: "How to get a passport?", answer: "Apply through your country’s passport office with valid ID, photos, and required forms." }
-    // Add more questions here if needed
+    { question: "What is a black hole?", answer: "A black hole is a region in space where gravity is so strong that nothing, not even light, can escape from it." },
+{ question: "How to create a website?", answer: "Use platforms like WordPress, Wix, or code with HTML/CSS/JS and host it using GitHub Pages or a web host." },
+{ question: "What is a VPN?", answer: "A Virtual Private Network encrypts your internet connection for security and privacy." },
+{ question: "How to study effectively?", answer: "Use active recall, spaced repetition, eliminate distractions, and take breaks using the Pomodoro technique." },
+{ question: "What is the tallest mountain?", answer: "Mount Everest is the tallest mountain on Earth, standing at 8,848.86 meters (29,031.7 ft)." },
+{ question: "How to improve English?", answer: "Read books, watch English media, use language learning apps, and speak with native speakers." },
+{ question: "What is the speed of light?", answer: "Approximately 299,792,458 meters per second (in a vacuum)." },
+{ question: "What is photosynthesis?", answer: "It’s the process by which plants convert sunlight into chemical energy using carbon dioxide and water." },
+{ question: "Who invented the internet?", answer: "Tim Berners-Lee is credited with inventing the World Wide Web in 1989." },
+{ question: "What is an NFT?", answer: "Non-Fungible Token – a unique digital item stored on the blockchain, often used in art and collectibles." },
+{ question: "What is the human body's largest organ?", answer: "The skin is the body's largest organ." },
+{ question: "How to learn programming?", answer: "Start with beginner-friendly languages like Python and use platforms like Codecademy, LeetCode, and freeCodeCamp." },
+{ question: "What is the universe made of?", answer: "Mostly dark energy (~68%), dark matter (~27%), and ordinary matter (~5%)." },
+{ question: "How to sleep better?", answer: "Maintain a routine, reduce screen time, avoid caffeine late, and keep your room cool and dark." },
+{ question: "How to take a screenshot on iPhone?", answer: "Press the Power + Volume Up buttons together (or Home + Power on older models)." },
+{ question: "What is inflation?", answer: "Inflation is the rate at which the general level of prices for goods and services rises over time." },
+{ question: "How to write an essay?", answer: "Start with a thesis, outline your main points, write clear paragraphs, and conclude strongly." },
+{ question: "What is DNA?", answer: "DNA (Deoxyribonucleic Acid) carries genetic information used in the growth and development of all living organisms." },
+{ question: "How many continents are there?", answer: "There are 7 continents: Asia, Africa, North America, South America, Antarctica, Europe, and Australia." },
+{ question: "How to increase productivity?", answer: "Prioritize tasks, avoid multitasking, use to-do lists, and take regular short breaks." },
+{ question: "What is gravity?", answer: "Gravity is the force by which a planet or other body draws objects toward its center." },
+{ question: "What is the capital of India?", answer: "New Delhi." },
+{ question: "Who is Elon Musk?", answer: "Elon Musk is the CEO of Tesla and SpaceX, and founder of several tech companies." },
+{ question: "How to save money?", answer: "Track expenses, set budgets, avoid impulse spending, and automate savings." },
+{ question: "How to be happy?", answer: "Practice gratitude, build relationships, exercise, help others, and find purpose in daily life." },
+{ question: "How to make coffee?", answer: "Boil water, add ground coffee, let it brew, and strain. Or use a machine or French press." },
+{ question: "What is the ozone layer?", answer: "A layer in Earth’s stratosphere that absorbs most of the sun’s harmful ultraviolet radiation." },
+{ question: "What is climate change?", answer: "Long-term alteration of temperature and typical weather patterns, largely due to human activities." },
+{ question: "What is the best programming language?", answer: "It depends on your goal: Python for beginners, JavaScript for web, C++ for systems, etc." },
+{ question: "How to make a YouTube channel?", answer: "Sign in to YouTube, click your profile, choose 'Your Channel', and upload content." },
+{ question: "What is a cryptocurrency?", answer: "A digital currency using cryptography to secure transactions, like Bitcoin or Ethereum." },
+{ question: "What is a recession?", answer: "A recession is a period of temporary economic decline during which trade and industrial activity are reduced." },
+{ question: "How to improve memory?", answer: "Use memory palaces, repetition, sleep well, exercise, and eat brain-healthy foods." },
+{ question: "Who is the Prime Minister of India?", answer: "As of 2024, Narendra Modi." },
+{ question: "What is a calorie?", answer: "A unit of energy. In nutrition, it represents the amount of energy food provides to the body." },
+{ question: "How to write a book?", answer: "Plan your plot, write regularly, edit thoroughly, and consider self-publishing or finding a publisher." },
+{ question: "What is the Great Wall of China?", answer: "A historic wall built for defense, stretching over 13,000 miles across northern China." },
+{ question: "How to start investing?", answer: "Learn basics, start small with mutual funds or ETFs, and consider using apps like Zerodha, Groww, or Robinhood." },
+{ question: "How to backup data?", answer: "Use external drives, cloud services like Google Drive, OneDrive, or automatic backup software." },
+{ question: "What is renewable energy?", answer: "Energy from natural sources that replenish, like solar, wind, hydro, and geothermal power." },
+{ question: "What is the brain made of?", answer: "It’s composed of neurons, glial cells, and contains gray and white matter." },
+{ question: "How to start a blog?", answer: "Use WordPress, Blogger, or Medium. Choose a niche, write quality posts, and promote them." },
+{ question: "What is a virus?", answer: "A microscopic infectious agent that replicates inside living cells, often causing disease." },
+{ question: "What is quantum physics?", answer: "A branch of physics that studies matter and energy at the most fundamental level (subatomic particles)." },
+{ question: "How to start a business?", answer: "Research the market, write a business plan, register legally, and begin selling or offering services." },
+{ question: "How to reduce stress?", answer: "Practice mindfulness, exercise, sleep well, talk to someone, and avoid excessive caffeine or social media." },
+{ question: "What is an ecosystem?", answer: "A community of living organisms and their physical environment interacting as a system." },
+{ question: "What is the moon made of?", answer: "Mainly rock and metal. Its surface has basalt, dust, and craters from meteor impacts." },
+{ question: "How to use Excel?", answer: "Excel is used for spreadsheets, formulas, data analysis, charts, and automation with functions or macros." },
+{ question: "How to boost Wi-Fi signal?", answer: "Place router centrally, avoid obstructions, use repeaters/extenders, and update firmware." }
+// Add more questions here if needed
   ];
 
   const container = document.getElementById("qaContainer");
