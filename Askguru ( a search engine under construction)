@@ -1,6 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
+  <head>
   <meta charset="UTF-8">
   <title>AskGuru – 100 Certified Google Answers</title>
   <style>
@@ -10,11 +8,11 @@
       margin: 0;
       padding: 0;
     }
-    .container {
-      max-width: 1000px;
+    .container {px;
       margin: auto;
       padding: 2rem;
-    }
+      max-width: 1000<!DOCTYPE html>
+      <html lang="en">}
     header {
       background-color: #2c3e50;
       color: #fff;
@@ -31,13 +29,26 @@
       margin-top: 0.5rem;
       color: #ecf0f1;
     }
+    .search-area {
+      display: flex;
+      gap: 10px;
+      margin: 30px 0 20px;
+    }
     input[type="text"] {
-      width: 100%;
+      flex: 1;
       padding: 12px;
       font-size: 16px;
-      margin: 30px 0 20px;
       border: 1px solid #ccc;
       border-radius: 5px;
+    }
+    button {
+      padding: 12px 20px;
+      font-size: 16px;
+      border: none;
+      background-color: #18bc9c;
+      color: white;
+      border-radius: 5px;
+      cursor: pointer;
     }
     .qa {
       background: #ffffff;
@@ -60,11 +71,14 @@
 
 <header>
   <h1>AskGuru</h1>
-  <div class="subtitle"> Most Searched Google Questions – With Certified Answers</div>
+  <div class="subtitle">Most Searched Google Questions – With Certified Answers</div>
 </header>
 
 <div class="container">
-  <input type="text" id="searchInput" placeholder="Search a question...">
+  <div class="search-area">
+    <input type="text" id="searchInput" placeholder="Search a question...">
+    <button id="searchBtn">Search</button>
+  </div>
   <div id="qaContainer"></div>
 </div>
 
@@ -80,98 +94,129 @@
     { question: "How to gain weight?", answer: "Eat calorie-dense foods, increase protein, and train for muscle." },
     { question: "How to make money online?", answer: "Try freelancing, content creation, affiliate marketing, or remote jobs." },
     { question: "What is AI?", answer: "AI is the simulation of human intelligence by machines." },
-    { question: "How to boil an egg?", answer: "Place eggs in cold water, bring to a boil, then simmer for 9–12 minutes." },
-    { question: "What is my location?", answer: "Use GPS services like https://where-am-i.net to detect your current location." },
-    { question: "How to delete Instagram account?", answer: "Go to https://www.instagram.com/accounts/remove/request/permanent/ to request deletion." },
-    { question: "What song is this?", answer: "Use apps like Shazam or the 'Search a song' feature in Google Assistant." },
-    { question: "What is the weather today?", answer: "Check accurate forecasts at https://weather.com or use a weather app." },
-    { question: "How to take a screenshot on Mac?", answer: "Press Command + Shift + 4 to capture a portion of your screen." },
-    { question: "How to write a resume?", answer: "Start with contact info, summary, work experience, education, and skills." },
-    { question: "Why is the sky blue?", answer: "Because molecules in the air scatter blue light more than other colors." },
-    { question: "How to cook rice?", answer: "Boil 1 part rice to 2 parts water, cover, and simmer for 15-20 minutes." },
-    { question: "What is ChatGPT?", answer: "ChatGPT is an AI chatbot developed by OpenAI that can answer questions and generate text." },
     { question: "What is Bitcoin?", answer: "Bitcoin is a decentralized digital currency without a central bank or administrator." },
     { question: "How to learn coding?", answer: "Start with online platforms like freeCodeCamp, Codecademy, or Coursera." },
-    { question: "What is my zodiac sign?", answer: "It depends on your birth date. Use a zodiac calculator to find out." },
-    { question: "How to meditate?", answer: "Sit quietly, focus on your breath, and gently redirect your thoughts when they wander." },
-    { question: "How old is the Earth?", answer: "About 4.54 billion years." },
-    { question: "How to fix a slow computer?", answer: "Uninstall unused programs, disable startup apps, clear temporary files, and update your OS." },
-    { question: "How many countries are there?", answer: "As of 2024, there are 195 countries recognized by the United Nations." },
-    { question: "What causes climate change?", answer: "Primarily greenhouse gas emissions from human activities like burning fossil fuels." },
-    { question: "What does '404 error' mean?", answer: "It means the requested web page could not be found on the server." },
-    { question: "How to get a passport?", answer: "Apply through your country’s passport office with valid ID, photos, and required forms." }
-    { question: "What is a black hole?", answer: "A black hole is a region in space where gravity is so strong that nothing, not even light, can escape from it." },
-{ question: "How to create a website?", answer: "Use platforms like WordPress, Wix, or code with HTML/CSS/JS and host it using GitHub Pages or a web host." },
-{ question: "What is a VPN?", answer: "A Virtual Private Network encrypts your internet connection for security and privacy." },
-{ question: "How to study effectively?", answer: "Use active recall, spaced repetition, eliminate distractions, and take breaks using the Pomodoro technique." },
-{ question: "What is the tallest mountain?", answer: "Mount Everest is the tallest mountain on Earth, standing at 8,848.86 meters (29,031.7 ft)." },
-{ question: "How to improve English?", answer: "Read books, watch English media, use language learning apps, and speak with native speakers." },
-{ question: "What is the speed of light?", answer: "Approximately 299,792,458 meters per second (in a vacuum)." },
-{ question: "What is photosynthesis?", answer: "It’s the process by which plants convert sunlight into chemical energy using carbon dioxide and water." },
-{ question: "Who invented the internet?", answer: "Tim Berners-Lee is credited with inventing the World Wide Web in 1989." },
-{ question: "What is an NFT?", answer: "Non-Fungible Token – a unique digital item stored on the blockchain, often used in art and collectibles." },
-{ question: "What is the human body's largest organ?", answer: "The skin is the body's largest organ." },
-{ question: "How to learn programming?", answer: "Start with beginner-friendly languages like Python and use platforms like Codecademy, LeetCode, and freeCodeCamp." },
-{ question: "What is the universe made of?", answer: "Mostly dark energy (~68%), dark matter (~27%), and ordinary matter (~5%)." },
-{ question: "How to sleep better?", answer: "Maintain a routine, reduce screen time, avoid caffeine late, and keep your room cool and dark." },
-{ question: "How to take a screenshot on iPhone?", answer: "Press the Power + Volume Up buttons together (or Home + Power on older models)." },
-{ question: "What is inflation?", answer: "Inflation is the rate at which the general level of prices for goods and services rises over time." },
-{ question: "How to write an essay?", answer: "Start with a thesis, outline your main points, write clear paragraphs, and conclude strongly." },
-{ question: "What is DNA?", answer: "DNA (Deoxyribonucleic Acid) carries genetic information used in the growth and development of all living organisms." },
-{ question: "How many continents are there?", answer: "There are 7 continents: Asia, Africa, North America, South America, Antarctica, Europe, and Australia." },
-{ question: "How to increase productivity?", answer: "Prioritize tasks, avoid multitasking, use to-do lists, and take regular short breaks." },
-{ question: "What is gravity?", answer: "Gravity is the force by which a planet or other body draws objects toward its center." },
-{ question: "What is the capital of India?", answer: "New Delhi." },
-{ question: "Who is Elon Musk?", answer: "Elon Musk is the CEO of Tesla and SpaceX, and founder of several tech companies." },
-{ question: "How to save money?", answer: "Track expenses, set budgets, avoid impulse spending, and automate savings." },
-{ question: "How to be happy?", answer: "Practice gratitude, build relationships, exercise, help others, and find purpose in daily life." },
-{ question: "How to make coffee?", answer: "Boil water, add ground coffee, let it brew, and strain. Or use a machine or French press." },
-{ question: "What is the ozone layer?", answer: "A layer in Earth’s stratosphere that absorbs most of the sun’s harmful ultraviolet radiation." },
-{ question: "What is climate change?", answer: "Long-term alteration of temperature and typical weather patterns, largely due to human activities." },
-{ question: "What is the best programming language?", answer: "It depends on your goal: Python for beginners, JavaScript for web, C++ for systems, etc." },
-{ question: "How to make a YouTube channel?", answer: "Sign in to YouTube, click your profile, choose 'Your Channel', and upload content." },
-{ question: "What is a cryptocurrency?", answer: "A digital currency using cryptography to secure transactions, like Bitcoin or Ethereum." },
-{ question: "What is a recession?", answer: "A recession is a period of temporary economic decline during which trade and industrial activity are reduced." },
-{ question: "How to improve memory?", answer: "Use memory palaces, repetition, sleep well, exercise, and eat brain-healthy foods." },
-{ question: "Who is the Prime Minister of India?", answer: "As of 2024, Narendra Modi." },
-{ question: "What is a calorie?", answer: "A unit of energy. In nutrition, it represents the amount of energy food provides to the body." },
-{ question: "How to write a book?", answer: "Plan your plot, write regularly, edit thoroughly, and consider self-publishing or finding a publisher." },
-{ question: "What is the Great Wall of China?", answer: "A historic wall built for defense, stretching over 13,000 miles across northern China." },
-{ question: "How to start investing?", answer: "Learn basics, start small with mutual funds or ETFs, and consider using apps like Zerodha, Groww, or Robinhood." },
-{ question: "How to backup data?", answer: "Use external drives, cloud services like Google Drive, OneDrive, or automatic backup software." },
-{ question: "What is renewable energy?", answer: "Energy from natural sources that replenish, like solar, wind, hydro, and geothermal power." },
-{ question: "What is the brain made of?", answer: "It’s composed of neurons, glial cells, and contains gray and white matter." },
-{ question: "How to start a blog?", answer: "Use WordPress, Blogger, or Medium. Choose a niche, write quality posts, and promote them." },
-{ question: "What is a virus?", answer: "A microscopic infectious agent that replicates inside living cells, often causing disease." },
-{ question: "What is quantum physics?", answer: "A branch of physics that studies matter and energy at the most fundamental level (subatomic particles)." },
-{ question: "How to start a business?", answer: "Research the market, write a business plan, register legally, and begin selling or offering services." },
-{ question: "How to reduce stress?", answer: "Practice mindfulness, exercise, sleep well, talk to someone, and avoid excessive caffeine or social media." },
-{ question: "What is an ecosystem?", answer: "A community of living organisms and their physical environment interacting as a system." },
-{ question: "What is the moon made of?", answer: "Mainly rock and metal. Its surface has basalt, dust, and craters from meteor impacts." },
-{ question: "How to use Excel?", answer: "Excel is used for spreadsheets, formulas, data analysis, charts, and automation with functions or macros." },
-{ question: "How to boost Wi-Fi signal?", answer: "Place router centrally, avoid obstructions, use repeaters/extenders, and update firmware." }
-// Add more questions here if needed
+    { question: "What is gravity?", answer: "Gravity is the force by which a planet or other body draws objects toward its center." },
+    { question: "Who is Elon Musk?", answer: "Elon Musk is the CEO of Tesla and SpaceX, and founder of several tech companies." },
+    { question: "What is DNA?", answer: "DNA (Deoxyribonucleic Acid) carries genetic information used in the growth and development of all living organisms." },
+    { question: "How to improve English?", answer: "Read books, watch English media, use language learning apps, and speak with native speakers." }    
+{ question: "What is the tallest building?", answer: "Burj Khalifa in Dubai, standing at 828 meters." },
+{ question: "Who was the first president of the USA?", answer: "George Washington." },
+{ question: "How many bones are in the human body?", answer: "There are 206 bones in the adult human body." },
+{ question: "What is the largest ocean?", answer: "The Pacific Ocean." },
+{ question: "How to create a Gmail account?", answer: "Visit gmail.com, click 'Create account', and follow the steps." },
+{ question: "How many planets are in the solar system?", answer: "8 recognized planets." },
+{ question: "What is a leap year?", answer: "A year with 366 days that occurs every 4 years." },
+{ question: "Who painted the Mona Lisa?", answer: "Leonardo da Vinci." },
+{ question: "How to change Facebook password?", answer: "Go to Settings > Security > Change Password." },
+{ question: "What is the currency of Japan?", answer: "Japanese Yen (JPY)." },
+{ question: "What is HTML?", answer: "HyperText Markup Language used to create web pages." },
+{ question: "What is the capital of Australia?", answer: "Canberra." },
+{ question: "What is water made of?", answer: "Two hydrogen atoms and one oxygen atom (H₂O)." },
+{ question: "How to improve handwriting?", answer: "Practice daily, write slowly, and use guidelines." },
+{ question: "What is the national animal of India?", answer: "The Bengal Tiger." },
+{ question: "How to increase height?", answer: "Balanced diet, exercise, posture correction, and genetics." },
+{ question: "How to delete a Twitter account?", answer: "Go to Settings and click 'Deactivate account'." },
+{ question: "What is 5G?", answer: "The 5th generation of mobile network technology." },
+{ question: "Who invented electricity?", answer: "Electricity was discovered gradually; Benjamin Franklin is famous for studying it." },
+{ question: "What is a rainbow?", answer: "A spectrum of light appearing after rain due to light refraction and dispersion." },
+{ question: "What is the largest desert?", answer: "Antarctica is the largest cold desert; Sahara is the largest hot desert." },
+{ question: "How to learn piano?", answer: "Start with scales, practice regularly, and use online tutorials or classes." },
+{ question: "What is a star?", answer: "A luminous ball of gas held together by gravity that generates light through nuclear fusion." },
+{ question: "What is the meaning of life?", answer: "Philosophers and cultures offer various interpretations; often linked to purpose and fulfillment." },
+{ question: "How to be confident?", answer: "Practice self-talk, set goals, face fears, and focus on growth." },
+{ question: "What is the internet?", answer: "A global network connecting computers for communication and data sharing." },
+{ question: "What is an atom?", answer: "The basic unit of matter, made up of protons, neutrons, and electrons." },
+{ question: "How to be successful?", answer: "Set clear goals, work hard, stay consistent, and learn from failures." },
+{ question: "What is diabetes?", answer: "A medical condition where blood sugar levels are abnormally high." },
+{ question: "What causes rain?", answer: "Water vapor condenses into clouds and falls as precipitation." },
+{ question: "How to stop hiccups?", answer: "Hold your breath, drink water slowly, or swallow a teaspoon of sugar." },
+{ question: "What is the longest river?", answer: "The Nile River, though some argue the Amazon is longer depending on measurement." },
+{ question: "How to draw a dog?", answer: "Start with basic shapes for head, body, and legs, then add details." },
+{ question: "Who discovered America?", answer: "Christopher Columbus is credited with the European discovery in 1492." },
+{ question: "What is a synonym?", answer: "A word that means the same or nearly the same as another word." },
+{ question: "What is 1 kilogram in pounds?", answer: "Approximately 2.20462 pounds." },
+{ question: "How to be healthy?", answer: "Eat balanced meals, exercise, sleep well, and manage stress." },
+{ question: "What is an ecosystem?", answer: "A community of organisms interacting with each other and their environment." },
+{ question: "How to grow plants?", answer: "Provide sunlight, water, good soil, and regular care." },
+{ question: "What is a comet?", answer: "A celestial object made of ice and dust that orbits the sun." },
+{ question: "What is the coldest place on Earth?", answer: "Antarctica, specifically the East Antarctic Plateau." },
+{ question: "How to change WhatsApp number?", answer: "Go to Settings > Account > Change Number." },
+{ question: "Who was Albert Einstein?", answer: "A physicist famous for the theory of relativity." },
+{ question: "What is 0 divided by 0?", answer: "It is undefined in mathematics." },
+{ question: "How to be mentally strong?", answer: "Build resilience, control emotions, and stay focused on goals." },
+{ question: "What is plastic made of?", answer: "Mostly petroleum-based polymers." },
+{ question: "What is global warming?", answer: "The long-term heating of Earth’s climate due to greenhouse gas emissions." },
+{ question: "What is democracy?", answer: "A system of government by the people, typically through elected representatives." },
+{ question: "What is a tsunami?", answer: "A large ocean wave usually caused by an underwater earthquake." },
+{ question: "What is AI used for?", answer: "Tasks like language translation, recommendation systems, robotics, and more." },
+{ question: "How many days in a leap year?", answer: "366 days." },
+{ question: "What is a galaxy?", answer: "A massive collection of stars, gas, dust, and dark matter bound by gravity." },
+{ question: "What is the boiling point of water?", answer: "100°C or 212°F at sea level." },
+{ question: "How to be a good student?", answer: "Be attentive, ask questions, revise regularly, and stay organized." },
+{ question: "What is a noun?", answer: "A word used to identify a person, place, or thing." },
+{ question: "What is the capital of USA?", answer: "Washington, D.C." },
+{ question: "How to tie shoelaces?", answer: "Form two loops, cross and pull through." },
+{ question: "What is a virus?", answer: "A microscopic infectious agent that replicates inside living cells." },
+{ question: "What is gravity?", answer: "A force that pulls objects toward one another, like Earth pulling us down." },
+{ question: "How to stay motivated?", answer: "Set goals, track progress, and reward yourself." },
+{ question: "What is a prime number?", answer: "A number greater than 1 that has no positive divisors other than 1 and itself." },
+{ question: "What is the capital of France?", answer: "Paris." },
+{ question: "What is a mammal?", answer: "Warm-blooded animals with fur or hair and usually give birth to live young." },
+{ question: "How to become rich?", answer: "Save, invest wisely, build skills, and manage money efficiently." },
+{ question: "What is the speed of sound?", answer: "343 meters per second (in air at 20°C)." },
+{ question: "What is the biggest animal?", answer: "The blue whale." },
+{ question: "How to clean a laptop?", answer: "Turn off the device, use microfiber cloth and compressed air." },
+{ question: "What is a continent?", answer: "A large continuous mass of land – Earth has 7 continents." },
+{ question: "How to fix Wi-Fi?", answer: "Restart the router, check cables, or reset the modem." },
+{ question: "What is cryptocurrency?", answer: "A digital currency secured by cryptography, like Bitcoin or Ethereum." },
+{ question: "What is a black hole?", answer: "A region in space with gravity so strong that not even light can escape." },
+{ question: "How to cook pasta?", answer: "Boil water, add pasta, cook for 8–12 minutes, then drain." },
+{ question: "What is evolution?", answer: "The change in the characteristics of a species over generations." },
+{ question: "How to make a resume?", answer: "Include contact info, summary, experience, education, and skills." },
+{ question: "What is carbon dioxide?", answer: "A colorless gas produced by respiration and combustion, CO₂." },
+{ question: "Who was Mahatma Gandhi?", answer: "A leader of India’s independence movement known for nonviolent resistance." },
+{ question: "What is a planet?", answer: "A celestial body orbiting a star, massive enough to be rounded by gravity." },
+{ question: "How to use Google Maps?", answer: "Enter a destination and follow the directions provided." },
+{ question: "What is algebra?", answer: "A branch of mathematics dealing with symbols and rules for manipulating them." },
+{ question: "How to check spelling in Word?", answer: "Use the 'Review' tab and click 'Spelling & Grammar'." },
+{ question: "What is an earthquake?", answer: "A sudden shaking of the ground caused by movement of the Earth's crust." },
+{ question: "How to become famous?", answer: "Create value, be consistent, promote yourself, and build a community." },
+{ question: "What is an adjective?", answer: "A word that describes a noun." },
+{ question: "How to recycle?", answer: "Separate waste, clean recyclables, and follow your local recycling rules." },
+{ question: "What is the smallest country?", answer: "Vatican City." },
+{ question: "How to play chess?", answer: "Move pieces strategically to checkmate your opponent’s king." },
+{ question: "What is JavaScript?", answer: "A programming language for web development, making pages interactive." },
+{ question: "How to bake a cake?", answer: "Mix ingredients, pour into a pan, and bake at a set temperature." },
+{ question: "What is a fossil?", answer: "Remains or impression of ancient organisms preserved in rock." }
+// Add more if needed
   ];
 
   const container = document.getElementById("qaContainer");
   const input = document.getElementById("searchInput");
+  const button = document.getElementById("searchBtn");
 
   function renderQuestions(filter = "") {
     container.innerHTML = "";
-    qaList.forEach(qa => {
-      if (qa.question.toLowerCase().includes(filter.toLowerCase())) {
+    const filtered = qaList.filter(qa => 
+      qa.question.toLowerCase().includes(filter.toLowerCase())
+    );
+    if (filtered.length === 0) {
+      container.innerHTML = "<p>No results found.</p>";
+    } else {
+      filtered.forEach(qa => {
         const div = document.createElement("div");
         div.className = "qa";
         div.innerHTML = `<h3>${qa.question}</h3><p>${qa.answer}</p>`;
         container.appendChild(div);
-      }
-    });
+      });
+    }
   }
 
-  input.addEventListener("input", () => {
-    renderQuestions(input.value);
-  });
+  input.addEventListener("input", () => renderQuestions(input.value));
+  button.addEventListener("click", () => renderQuestions(input.value));
 
+  // Initial render
   renderQuestions();
 </script>
 
